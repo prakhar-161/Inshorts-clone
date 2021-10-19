@@ -4,12 +4,15 @@ const app = express();
 
 //Components import
 const connection = require('./db/connection.js');
+const DefaultData = require('./default.js');
 
 //dotenv config
 dotenv.config({ path: './config.env' });
 
 //database connection
 connection();
+
+DefaultData();
 
 const port = process.env.PORT;
 app.listen(port,(err) => {
