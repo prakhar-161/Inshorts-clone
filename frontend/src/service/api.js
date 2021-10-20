@@ -1,7 +1,7 @@
 const axios = require('axios');
-const URL = 'http://localhost/5000';
+const URL = 'http://localhost:5000';
 
-const getNews = async () => {
+export const getNews = async () => {
     try {
         return await axios.get(`${URL}/news`);
     } catch (error) {
@@ -9,4 +9,3 @@ const getNews = async () => {
     }
 };  
 
-module.exports = getNews;

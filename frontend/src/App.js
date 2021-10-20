@@ -1,6 +1,7 @@
 import { Box, makeStyles } from '@material-ui/core';
 import Header from './components/Header';
 import SubHeader from './components/SubHeader';
+import Articles from './components/Articles';
 
 const useStyles = makeStyles({ 
   container: {
@@ -17,6 +18,7 @@ function App() {
       <Header />
       <Box className={classes.container} >
         <SubHeader />
+        <Articles />
       </Box>
     </Box>
   )
