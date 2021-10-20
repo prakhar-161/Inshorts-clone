@@ -8,7 +8,10 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex',
         alignItems: 'center',
         boxShadow: '1px 1px 5px #888888',
-        marginBottom: 30
+        marginBottom: 30,
+        [theme.breakpoints.down('md')]: {
+            display: 'none'
+        }
     },
     text: {
         fontSize: 14,
