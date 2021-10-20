@@ -7,7 +7,8 @@ const useStyles = makeStyles((theme) => ({
         height: 48,
         display: 'flex',
         alignItems: 'center',
-        boxShadow: '1px 1px 5px #888888'
+        boxShadow: '1px 1px 5px #888888',
+        marginBottom: 30
     },
     text: {
         fontSize: 14,
